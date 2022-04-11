@@ -8,10 +8,11 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.uni.kelani.mythirdapp.R
+import com.uni.kelani.mythirdapp.model.Locations
 import com.uni.kelani.mythirdapp.model.Photos
 import java.net.URL
 
-class PhotoAdapter(private val mList: List<Photos>) : RecyclerView.Adapter<PhotoAdapter.ViewHolder>(){
+class LocationsAdapter(private val mList: List<Locations>) : RecyclerView.Adapter<LocationsAdapter.ViewHolder>(){
 
 
 // create new views
@@ -30,18 +31,18 @@ override fun onBindViewHolder(holder: ViewHolder, position: Int) {
     val ItemsViewModel = mList[position]
 
     // sets the image to the imageview from our itemHolder class
-    val newURL= URL(ItemsViewModel.url)
-    val mIcon_val= BitmapFactory.decodeStream(newURL.openConnection().getInputStream())
-    holder.imageView.setImageBitmap(mIcon_val)
+    //val newURL= URL(ItemsViewModel.url)
+    //val mIcon_val= BitmapFactory.decodeStream(newURL.openConnection().getInputStream())
+   // holder.imageView.setImageBitmap(mIcon_val)
 
     // sets the text to the textview from our itemHolder class
-    holder.textView.text = ItemsViewModel.title
+    holder.textView.text = ItemsViewModel.location_name
 
 }
 
 // Holds the views for adding it to image and text
 class ViewHolder(ItemView: View) : RecyclerView.ViewHolder(ItemView) {
-    val imageView: ImageView = itemView.findViewById(R.id.imageview)
+   // val imageView: ImageView = itemView.findViewById(R.id.imageview)
     val textView: TextView = itemView.findViewById(R.id.textView)
 }
 

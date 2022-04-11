@@ -11,6 +11,9 @@ interface LocationsDao {
     @Query("SELECT * FROM locations")
     fun getAll(): List<Locations>
 
+    @Query("SELECT * FROM locations WHERE location_id IN (:location_id)")
+    fun getById(location_id: String): Locations
+
    // @Query("SELECT * FROM user WHERE uid IN (:userIds)")
     //fun loadAllByIds(userIds: IntArray): List<User>
 
@@ -21,6 +24,6 @@ interface LocationsDao {
     @Insert
     fun insertAll(vararg locations: Locations)
 
-    //@Delete
-    //fun delete(user: User)
+    @Delete
+    fun delete(user: User)
 }

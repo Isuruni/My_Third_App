@@ -6,15 +6,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
-import androidx.recyclerview.widget.LinearLayoutManager
-import com.uni.kelani.mythirdapp.adapter.PhotoAdapter
 import com.uni.kelani.mythirdapp.api.PhotoAPIService
-import com.uni.kelani.mythirdapp.databinding.FragmentFirstBinding
 import com.uni.kelani.mythirdapp.databinding.FragmentOpenBinding
-import com.uni.kelani.mythirdapp.model.Photos
-import retrofit2.Call
-import retrofit2.Callback
-import retrofit2.Response
 
 class OpenFragment : Fragment() {
 
