@@ -18,8 +18,8 @@ interface LocationsDao {
             //"last_name LIKE :last LIMIT 1")
     //fun findByName(first: String, last: String): User
 
-    //@Insert
-    //fun insertAll(vararg users: User)
+    @Insert
+    fun insertAll(vararg locations: Locations)
 
     //@Delete
     //fun delete(user: User)

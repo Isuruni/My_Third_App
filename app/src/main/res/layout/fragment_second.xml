@@ -7,11 +7,73 @@
     tools:context=".SecondFragment">
 
     <TextView
-        android:id="@+id/textview_second"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toTopOf="@id/button_second"
+        android:id="@+id/textview_first"
+        android:layout_width="294dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="76dp"
+        android:gravity="center"
+        android:text="Add your Location"
+        android:textColor="@color/teal_700"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/textview_second"
+        android:layout_width="294dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="156dp"
+        android:text="Location ID : "
+        android:textColor="@color/teal_700"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/textview_third"
+        android:layout_width="294dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="228dp"
+        android:text="Location Name : "
+        android:textColor="@color/teal_700"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textview_fourth"
+        android:layout_width="294dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="308dp"
+        android:text="Location Latitude : "
+        android:textColor="@color/teal_700"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textview_fifth"
+        android:layout_width="294dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="384dp"
+        android:text="Location Longitude : "
+        android:textColor="@color/teal_700"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -19,9 +81,65 @@
         android:id="@+id/button_second"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/previous"
+        android:backgroundTint="@color/teal_700"
+        android:text="Save Location"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textview_second" />
+        app:layout_constraintTop_toBottomOf="@id/textview_second"
+        app:layout_constraintVertical_bias="0.611" />
+
+    <Button
+        android:id="@+id/button_first"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/teal_700"
+        android:text="Main Page"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textview_second"
+        app:layout_constraintVertical_bias="0.757" />
+
+    <EditText
+        android:id="@+id/editText_first"
+        android:layout_width="168dp"
+        android:layout_height="46dp"
+        android:ems="10"
+        android:textColor="@color/teal_700"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="226dp"
+        tools:layout_editor_absoluteY="156dp" />
+
+    <EditText
+        android:id="@+id/editText_second"
+        android:layout_width="175dp"
+        android:layout_height="46dp"
+        android:ems="10"
+        android:textColor="@color/teal_700"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="226dp"
+        tools:layout_editor_absoluteY="221dp" />
+
+    <EditText
+        android:id="@+id/editText_third"
+        android:layout_width="175dp"
+        android:layout_height="49dp"
+        android:ems="10"
+        android:textColor="@color/teal_700"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="226dp"
+        tools:layout_editor_absoluteY="384dp" />
+
+    <EditText
+        android:id="@+id/editText_Fourth"
+        android:layout_width="175dp"
+        android:layout_height="49dp"
+        android:ems="10"
+        android:textColor="@color/teal_700"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="226dp"
+        tools:layout_editor_absoluteY="308dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

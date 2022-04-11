@@ -1,13 +1,13 @@
 package com.uni.kelani.mythirdapp.model
 
-import androidx.room.ColumnInfo
+import android.text.Editable
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 
 @Entity
 data class Locations(
-    @PrimaryKey val uid: Int,
+    @PrimaryKey val location_id: String,
     val location_name: String?,
-    val latitude: Float?,
-    val longitude: Float?
+    val latitude: Double?,
+    val longitude: Double?
 )
