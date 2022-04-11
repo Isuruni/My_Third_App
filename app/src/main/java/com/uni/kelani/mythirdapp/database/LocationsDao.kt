@@ -25,5 +25,5 @@ interface LocationsDao {
     fun insertAll(vararg locations: Locations)
 
     @Delete
-    fun delete(user: User)
+    fun delete(locations: Locations)
 }
